@@ -1,15 +1,20 @@
-undefined + 1;
-'true' == true
-false == 'false'
-null == ''
-3 ** (9 / 3);
-!!'false' == !!'true'
-0 || '0' && 1
-1 < 2 < 3
-'foo'+ + +'bar'
-3 ** 2 / 3;
-1 < 2 > 3
-(+null == false) < 1;
-false && true || true
-false && (true || true);
-(+null == false) < 1 ** 5;
+undefined + 1; // = NaN --> number
+"true" == true; //= false --> boolean
+false == "false"; //false --> boolean
+null == ""; // false ->> boolean
+3 ** (9 / 3); // 27 -->number
+!!"false" == !!"true"; //true --> boolean
+0 || ("0" && 1); // 1 -->number
+1 < 2 < 3; // true --> boolean
+"foo" + +(+"bar"); //'fooNaN' --> string
+3 ** 2 / 3; // 3 --> number
+1 <
+  2 >
+  3(
+    // false -->boolean
+    +null == false
+  ) <
+  1; // false -->boolean
+(false && true) || true; // true --> boolean
+false && (true || true); //false -->boolean
+(+null == false) < 1 ** 5; // false --> boolean
